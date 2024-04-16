@@ -1,8 +1,11 @@
 
     body {
+      animation: slider 32s linear infinite; /* Change background image every 8 seconds linearly infinitely */
+      background-size: cover;
+      background-position: center;
+      height: 100vh; /* Adjust height as needed */
       margin: 0;
       padding: 0;
-      background-image: url('../images/slider-8.gif');
       position: absolute; 
       background-size: cover;
       background-attachment: fixed; /* Keeps the background image fixed in place */
@@ -10,10 +13,43 @@
       cursor: url('../images/favicon.png'), auto; 
     }
 
+    @keyframes slider {
+      0% { background-image: url('../images/slider_1.jpg'); }
+      25% { background-image: url('../images/slider_2.jpg'); }
+      50% { background-image: url('../images/slider_3.jpg'); }
+      75% { background-image: url('../images/slider_4.jpg'); }
+      100% { background-image: url('../images/slider_5.jpg'); }
+    }
+
+    #menuContainer {
+      display: flex; /* Use flexbox */
+      justify-content: center;
+      background-color: rgba(22, 34, 57, 0.1);
+      width: 100%; 
+    }
+
+    /* Style for the menu divs */
+    .menu {
+      background-color: rgba(22, 34, 57, 0.1); 
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      flex: 1; 
+    }
+
+     
+
+    /* Style for the logo div */
+    .logo { 
+      padding: 10px;
+      text-align: center;
+      flex-grow: 0;
+    }
+
     .content {
       position: relative;
-      padding: 20px;
-      background-color: rgba(22, 34, 57, 0.85);
+      padding: 60px 20px;
+      background-color: rgba(22, 34, 57, 0.25);
       color: rgb(255, 255, 255);
       font-size: 60px
     }
@@ -22,14 +58,27 @@
         color: #fff;
     }
 
-    #logo {
-        width: 50%
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
 
+    .spin {
+      animation: spin 14s infinite linear;
+    }
+
+    #logo {
+        width: 30%; 
+    }
+  
     #event {
         width: 80%;
         max-width: 80%;
     }
+    .darken:hover {
+      opacity: 0.8;
+    }
+
 
     .video-container {
         position: relative;
@@ -59,7 +108,7 @@
 
 
       footer {
-        margin-top: 10%;
+        padding-top: 10%;
         background-color: #0D021C;
         color: #fff;
         padding: 20px;
@@ -75,6 +124,10 @@
         color: #fff;
         font-size: 20px;
         text-decoration: none;
+      }
+
+      .social-media a:hover {
+        color:#cbb05f;
       }
 
       .donate {
