@@ -1,0 +1,53 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('../images/slider-8.gif');
+      position: absolute; 
+      background-size: cover;
+      background-attachment: fixed; /* Keeps the background image fixed in place */
+      text-align: center;
+    }
+
+    .content {
+      position: relative;
+      padding: 20px;
+      background-color: rgba(22, 34, 57, 0.85);
+      color: rgb(255, 255, 255);
+      font-size: 100px
+    }
+
+    #logo {
+        width: 50%
+    }
+
+    #event {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+        height: 0;
+        overflow: hidden;
+      }
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 70%;
+      }
+
+
+      @media screen and (max-width: 768px) {
+        #logo {
+            width: 90%
+        }
+        .video-container iframe {
+            
+            width: 95%;
+            height: 95%;
+          }
+      } 
