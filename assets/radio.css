@@ -92,17 +92,13 @@
     }
 
     @media screen and (max-width: 600px) {
-      #livestream {
-       
+      #livestream {       
         bottom: unset;
-        top: 120px
+        top: 120px;
+        width: 70%! important;
       }
-
-      #livestream img {
-        width: 70% !important;
-      }
+ 
       #podcast {
-        
         bottom: unset;
         top: 120px
       }
