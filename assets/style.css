@@ -1,6 +1,6 @@
 
     body {
-      animation: slider 32s linear infinite; /* Change background image every 8 seconds linearly infinitely */
+      animation: slider 42s linear infinite; /* Change background image every 8 seconds linearly infinitely */
       background-size: cover;
       background-position: center;
       height: 100vh; /* Adjust height as needed */
@@ -15,17 +15,17 @@
 
     @keyframes slider {
       0% { background-image: url('../images/slider_1.jpg'); }
-      25% { background-image: url('../images/slider_2.jpg'); }
-      50% { background-image: url('../images/slider_3.jpg'); }
-      75% { background-image: url('../images/slider_4.jpg'); }
-      100% { background-image: url('../images/slider_5.jpg'); }
+      20% { background-image: url('../images/slider_2.jpg'); }
+      40% { background-image: url('../images/slider_3.jpg'); }
+      60% { background-image: url('../images/slider_4.jpg'); }
+      80% { background-image: url('../images/slider_5.jpg'); }
+      100% { background-image: url('../images/slider_6.jpg'); }
     }
 
     #menuContainer {
       display: flex; /* Use flexbox */
-      justify-content: center;
+      
       background-color: rgba(22, 34, 57, 0.1);
-      width: 100%; 
     }
 
     /* Style for the menu divs */
@@ -34,16 +34,14 @@
       color: #fff;
       padding: 10px 20px;
       text-align: center;
-      flex: 1; 
+      flex: 1 1 36%;
     }
-
-     
 
     /* Style for the logo div */
     .logo { 
       padding: 10px;
-      text-align: center;
-      flex-grow: 0;
+      text-align: center; 
+      flex: 1 1 20%;
     }
 
     .content {
@@ -72,8 +70,8 @@
     }
   
     #event {
-        width: 80%;
-        max-width: 80%;
+        width: 50%;
+        max-width: 50%;
     }
     .darken:hover {
       opacity: 0.8;
@@ -131,10 +129,10 @@
       }
 
       .donate {
-        position: absolute;
+    /*    position: absolute;
         right: 5px;
         bottom: 5px;
-        
+      */  
       }
 
       .donate button {

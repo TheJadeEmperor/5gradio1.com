@@ -13,16 +13,14 @@
 <body title="5gradio1"> 
 
   <div id="menuContainer">
-    <div class="menu">
-      <a href="#" class="menu-item">Home</a>
-      <a href="#" class="menu-item">About</a>
-      <a href="#" class="menu-item">Services</a>
-      <a href="#" class="menu-item">Contact</a>
-     
-
+    <div class="menu blinking">
+      <a href="#home" class="menu-item">Home</a>
+      <a href="#events" class="menu-item">Events</a>
+      <a href="#videos" class="menu-item">Videos</a>
+      <a href="#gallery" class="menu-item">Gallery</a>
 
     </div>
-    <div class="logo">
+    <div class="logo" id="home">
       <img id="logo" class="darken" src="images/logo.png" alt="5gradio1"></div>
     <div class="menu">
       
@@ -37,13 +35,45 @@
 
 <div class="content">
 
-	
- <h1 class="blinking">Listen Live 24/7</h1>
+  <style>
+    /* Container for the image */
+    #livestream {
+      position: fixed; /* Position the container */
+      bottom: 0; /* Align the container to the bottom of the viewport */
+      left: 0; /* Center the container horizontally */
+      right: 0;
+      text-align: center; /* Center the image horizontally */
+    }
+    </style>
 
+<!-- BEGINS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
+<div id="livestream">
+  <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
 
-  <iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/live/vida-unida-935fm-new-york-10130/?embed=true" frameborder="0"></iframe>
+  <script type="text/javascript">
 
-  <h1>Events</h1>
+  MRP.insert({
+  'url':'https://streamer.radio.co/sbd4b81243/listen',
+  'lang':'en',
+  'codec':'mp3',
+  'volume':65,
+  'autoplay':true,
+  'jsevents':true,
+  'buffering':0,
+  'title':'5GRadio1.com',
+  'welcome':'The Global Nerwork',
+  'wmode':'transparent',
+  'skin':'listen-live',
+  'width':250,
+  'height':100
+  });
+  </script>
+</div>
+
+<!-- ENDS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
+ 
+
+  <h1 id="events">Events</h1>
 	<img id="event" class="darken" src="images/event.jpg" alt="5gradio1">
 
   <video controls="" width="100%" height="100%">  
@@ -51,7 +81,7 @@
   </video>
 
   <!-- videos -->
-  <h1>Videos</h1>
+  <h1 id="videos">Videos</h1>
   <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/DLr3nECDqJ0?si=s7c3DtBSyH3BZwjH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
  </div>
@@ -63,10 +93,10 @@
   <div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/DLr3nECDqJ0?si=r_hvJF5PSGeiwJ15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-<!-- slider -->
+ 
 
-
-<!-- gallery pages -->
+<!-- gallery pages --> 
+ <h1 id="gallery">Gallery</h1>
 
 <!-- zulu page -->
 
