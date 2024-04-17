@@ -9,6 +9,13 @@
 
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script>
+    function scrollDown() {
+      window.scrollBy(0, 400); // Scroll down by 200 pixels
+    }
+  </script>
+  
 </head>
 <body title="5gradio1"> 
 
@@ -35,43 +42,36 @@
 
 <div class="content">
 
-  <style>
-    /* Container for the image */
-    #livestream {
-      position: fixed; /* Position the container */
-      bottom: 0; /* Align the container to the bottom of the viewport */
-      left: 0; /* Center the container horizontally */
-      right: 0;
-      text-align: center; /* Center the image horizontally */
-    }
-    </style>
-
 <!-- BEGINS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
 <div id="livestream">
   <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
 
   <script type="text/javascript">
 
-  MRP.insert({
-  'url':'https://streamer.radio.co/sbd4b81243/listen',
-  'lang':'en',
-  'codec':'mp3',
-  'volume':65,
-  'autoplay':true,
-  'jsevents':true,
-  'buffering':0,
-  'title':'5GRadio1.com',
-  'welcome':'The Global Nerwork',
-  'wmode':'transparent',
-  'skin':'listen-live',
-  'width':250,
-  'height':100
-  });
+    MRP.insert({
+    'url':'https://streamer.radio.co/sbd4b81243/listen',
+    'lang':'en',
+    'codec':'mp3',
+    'volume':100,
+    'autoplay':false,
+    'jsevents':true,
+    'buffering':0,
+    'title':'5GRadio1.com',
+    'welcome':'The Global Nerwork',
+    'wmode':'transparent',
+    'skin':'listen-live',
+    'width':250,
+    'height':100
+    });
   </script>
 </div>
-
 <!-- ENDS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
  
+<div id="podcast">
+  <img src="images/podcast.jpg" />
+</div>
+
+<button class="scrollButton blinking" onclick="scrollDown()"><img src="images/arrow.png"></button>
 
   <h1 id="events">Events</h1>
 	<img id="event" class="darken" src="images/event.jpg" alt="5gradio1">
@@ -79,6 +79,8 @@
   <video controls="" width="100%" height="100%">  
     <source src="assets/1.mp4" type="video/mp4">
   </video>
+
+  <button class="scrollButton blinking" onclick="scrollDown()"><img src="images/arrow.png"></button>
 
   <!-- videos -->
   <h1 id="videos">Videos</h1>
@@ -94,17 +96,13 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/DLr3nECDqJ0?si=r_hvJF5PSGeiwJ15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
  
-
+<button class="scrollButton blinking" onclick="scrollDown()"><img src="images/arrow.png"></button>
 <!-- gallery pages --> 
- <h1 id="gallery">Gallery</h1>
+<h1 id="gallery">Gallery</h1>
 
-<!-- zulu page -->
-
-<!-- global --> 
 
 </div>
  
-
 <footer>
   <p>5GRadio1 Copyright &copy;  <a class="darken" href="https://benjaminlouie.com" target="_BLANK">BL Web Solutions</a></p>
   <div class="social-media" >

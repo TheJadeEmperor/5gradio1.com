@@ -24,17 +24,23 @@
 
     #menuContainer {
       display: flex; /* Use flexbox */
-      
-      background-color: rgba(22, 34, 57, 0.1);
+      background-color: rgba(22, 34, 57, 0);
     }
 
     /* Style for the menu divs */
     .menu {
-      background-color: rgba(22, 34, 57, 0.1); 
+      background-color: rgba(22, 34, 57, 0); 
       color: #fff;
       padding: 10px 20px;
       text-align: center;
       flex: 1 1 36%;
+    }
+
+    .menu a {
+      text-decoration: none;
+      margin: 0 3%;
+      font-size: 22px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     /* Style for the logo div */
@@ -43,18 +49,76 @@
       text-align: center; 
       flex: 1 1 20%;
     }
+    
+    #logo {
+      width: 60%; 
+    }
 
     .content {
       position: relative;
-      padding: 60px 20px;
+      padding: 60px 20px 100px 20px;
       background-color: rgba(22, 34, 57, 0.25);
       color: rgb(255, 255, 255);
       font-size: 60px
     }
 
+    
+    #livestream {
+      position: fixed; /* Position the container */
+      bottom: 0; /* Align the container to the bottom of the viewport */
+      left: 0; /* Center the container horizontally */
+      right: 0;
+      text-align: center; /* Center the image horizontally */
+      cursor: pointer;
+    }
+
+    #podcast {
+      position: fixed; 
+      bottom: 0;
+      right: 0;
+      text-align: center; 
+      cursor: pointer;
+
+    }
+
+    #podcast img {
+      border-radius: 50px;
+      box-shadow: 1px 3px 12px 4px #fff;
+    }
+
+    @media screen and (max-width: 500px) {
+      #livestream {
+        bottom: unset;
+        top: 50px
+      }
+    }
+
+    .scrollButton { /* down arrow */
+      position: relative;
+      bottom: 0;
+      background-color: rgba(22, 34, 57, 0);
+      border: 0;
+      cursor: pointer;
+    }
+
+    .scrollButton img {
+      color:rgb(228, 225, 225);
+      width: 25%;
+    }
+    
+    h1 {
+      color:rgb(207, 207, 172);
+    }
+
     a {
         color: #fff;
     }
+
+    a:hover {
+      color:#e9be3c;
+      text-decoration: underline;
+    }
+
 
     @keyframes spin {
       from { transform: rotate(0deg); }
@@ -65,10 +129,6 @@
       animation: spin 14s infinite linear;
     }
 
-    #logo {
-        width: 40%; 
-    }
-  
     #event {
         width: 50%;
         max-width: 50%;
@@ -98,12 +158,10 @@
             width: 90%
         }
         .video-container iframe {
-            
             width: 95%;
             height: 95%;
           }
       } 
-
 
       footer {
         padding-top: 10%;
@@ -125,14 +183,13 @@
       }
 
       .social-media a:hover {
-        color:#cbb05f;
+        color:#e9be3c;
       }
 
       .donate {
-    /*    position: absolute;
-        right: 5px;
-        bottom: 5px;
-      */  
+        position: relative;
+        float: right;
+        bottom: 50px;
       }
 
       .donate button {
@@ -148,5 +205,5 @@
         100% { opacity: 1; }
       }
       .blinking {
-        animation: blink 2s infinite;
+        animation: blink 4s infinite;
       }
