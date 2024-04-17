@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Image Slider</title>
+  <style>
+    /* Slider container styles */
+    .slider-container {
+      width: 100%;
+      height: 400px; /* Adjust height as needed */
+      background-size: cover;
+      background-position: center;
+      transition: background-image 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slider-container" id="slider">
+    gfkofgmgkormhkgr
+    fgfmekoggmkro
+</div>
+
+<script>
+  // Array of image URLs
+  const images = [
+    'images/slider_1.jpg',
+    'images/slider_2.jpg',
+    'images/slider_3.jpg',
+    // Add more image URLs as needed
+  ];
+
+  // Function to change the background image
+  function changeBackgroundImage() {
+    const slider = document.getElementById('slider');
+    const randomIndex = Math.floor(Math.random() * images.length); // Get a random index from the images array
+    const imageUrl = images[randomIndex]; // Get the random image URL
+    slider.style.backgroundImage = `url(${imageUrl})`; // Set the background image
+  }
+
+  // Change background image every 5 seconds (5000 milliseconds)
+  setInterval(changeBackgroundImage, 5000);
+</script>
+
+</body>
+</html>

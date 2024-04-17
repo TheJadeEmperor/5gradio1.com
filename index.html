@@ -15,9 +15,34 @@
       window.scrollBy(0, 400); // Scroll down by 200 pixels
     }
   </script>
+
+  
+<script>
+  // Array of image URLs
+  const images = [
+    'images/slider_1.jpg',
+    'images/slider_2.jpg',
+    'images/slider_3.jpg',
+    'images/slider_4.jpg',
+    'images/slider_5.jpg',
+    'images/slider_6.jpg',
+    // Add more image URLs as needed
+  ];
+
+  // Function to change the background image
+  function changeBackgroundImage() {
+    const slider = document.getElementById('slider');
+    const randomIndex = Math.floor(Math.random() * images.length); // Get a random index from the images array
+    const imageUrl = images[randomIndex]; // Get the random image URL
+    slider.style.backgroundImage = `url(${imageUrl})`; // Set the background image
+  }
+
+  // Change background image every 5 seconds (5000 milliseconds)
+  setInterval(changeBackgroundImage, 5000);
+</script>
   
 </head>
-<body title="5gradio1"> 
+<body title="5gradio1"  id="slider"> 
 
   <div id="menuContainer">
     <div class="menu blinking">
@@ -114,9 +139,8 @@
     <a class="spin darken" href="https://www.instagram.com/trevor.forde/" target="_BLANK"><i class="fab fa-instagram"></i></a>
   </div>
 
-  <div class="donate blinking">
-    <a href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f6345180667dc&mfid=1713240376703_f6345180667dc#/checkout/openButton"><button>Donate</button></a>
-
+  <div class="donate">
+    <a href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f6345180667dc&mfid=1713240376703_f6345180667dc#/checkout/openButton"><button class="blinking" >Donate</button></a>
   </div>
 
 </footer>

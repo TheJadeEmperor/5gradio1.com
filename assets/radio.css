@@ -1,6 +1,10 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&amp;display=swap');
 
     body {
-      animation: slider 42s linear infinite; /* Change background image every 8 seconds linearly infinitely */
+      font-family: "Barlow", sans-serif;
+    /*  animation: slider 42s infinite;  */
+      transition: background-image 2s ease;
       background-size: cover;
       background-position: center;
       height: 100vh; /* Adjust height as needed */
@@ -25,6 +29,7 @@
     #menuContainer {
       display: flex; /* Use flexbox */
       background-color: rgba(22, 34, 57, 0);
+      position: fixed;
     }
 
     /* Style for the menu divs */
@@ -40,7 +45,7 @@
       text-decoration: none;
       margin: 0 3%;
       font-size: 22px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: Poppins, sans-serif;
     }
 
     /* Style for the logo div */
@@ -86,10 +91,24 @@
       box-shadow: 1px 3px 12px 4px #fff;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       #livestream {
+       
         bottom: unset;
-        top: 50px
+        top: 120px
+      }
+
+      #livestream img {
+        width: 70% !important;
+      }
+      #podcast {
+        
+        bottom: unset;
+        top: 120px
+      }
+
+      #podcast img {
+        width: 70%;
       }
     }
 
