@@ -11,13 +11,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script>
+
     function scrollDown() {
       window.scrollBy(0, 400); // Scroll down by 200 pixels
     }
-  </script>
-
-  
-<script>
+ 
   // Array of image URLs
   const images = [
     'images/slider_1.jpg',
@@ -26,7 +24,6 @@
     'images/slider_4.jpg',
     'images/slider_5.jpg',
     'images/slider_6.jpg',
-    // Add more image URLs as needed
   ];
 
   // Function to change the background image
@@ -39,24 +36,25 @@
 
   // Change background image every 5 seconds (5000 milliseconds)
   setInterval(changeBackgroundImage, 5000);
+
 </script>
   
 </head>
-<body title="5gradio1"  id="slider"> 
+<body title="5gradio1" id="slider"> 
 
   <div id="menuContainer">
     <div class="menu blinking">
-      <a href="#home" class="menu-item">Home</a>
-      <a href="#events" class="menu-item">Events</a>
-      <a href="#videos" class="menu-item">Videos</a>
-      <a href="#gallery" class="menu-item">Gallery</a>
+      <a href="#home">Home</a>
+      <a href="#events">Events</a>
+      <a href="#videos">Videos</a>
+      <a href="#gallery">Gallery</a>
 
     </div>
     <div class="logo" id="home">
       <img id="logo" class="darken" src="images/logo.png" alt="5gradio1"></div>
     <div class="menu">
       
-      <div class="social-media" >
+      <div class="socialMedia" >
         <a class="spin darken" href="https://www.facebook.com/eastcoastgroupny/" target="_BLANK"><i class="fab fa-facebook"></i></a>
         <a class="spin darken" href="https://twitter.com/q96fm?lang=en" target="_BLANK"><i class="fab fa-twitter"></i></a>
         <a class="spin darken" href="https://www.youtube.com/channel/UCBiX00Ti_pfZl8ivRnPA-Rg" target="_BLANK"><i class="fab fa-youtube"></i></a>
@@ -100,10 +98,13 @@
 
 <button class="scrollButton blinking" onclick="scrollDown()"><img src="images/arrow.png"></button>
 
-  <h1 id="events">Events</h1>
-	<img id="event" class="darken" src="images/event.jpg" alt="5gradio1">
 
-  <video controls="" width="100%" height="100%">  
+  <h1 id="events">Events</h1>
+	
+  <img id="q96fm1" class="darken" src="images/event.jpg" alt="5gradio1">
+  <img id="q96fm2" class="darken" src="images/q96fm.jpg" alt="5gradio1"/>
+
+  <video id="embedVideo" width="100%" height="100%">
     <source src="assets/1.mp4" type="video/mp4">
   </video>
 
@@ -111,28 +112,30 @@
 
   <!-- videos -->
   <h1 id="videos">Videos</h1>
-  <div class="video-container">
+  <div class="videoContainer">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/DLr3nECDqJ0?si=s7c3DtBSyH3BZwjH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
  </div>
 
-  <div class="video-container">
+  <div class="videoContainer">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2BV1zJjmtA?si=Rlz9L1SgpnRZnUAJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
  
-  <div class="video-container">
+  <div class="videoContainer">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/DLr3nECDqJ0?si=r_hvJF5PSGeiwJ15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
  
 <button class="scrollButton blinking" onclick="scrollDown()"><img src="images/arrow.png"></button>
+
 <!-- gallery pages --> 
 <h1 id="gallery">Gallery</h1>
+
 
 
 </div>
  
 <footer>
   <p>5GRadio1 Copyright &copy;  <a class="darken" href="https://benjaminlouie.com" target="_BLANK">BL Web Solutions</a></p>
-  <div class="social-media" >
+  <div class="socialMedia" >
     <a class="spin darken" href="https://www.facebook.com/eastcoastgroupny/" target="_BLANK"><i class="fab fa-facebook"></i></a>
     <a class="spin darken" href="https://twitter.com/q96fm?lang=en" target="_BLANK"><i class="fab fa-twitter"></i></a>
     <a class="spin darken" href="https://www.youtube.com/channel/UCBiX00Ti_pfZl8ivRnPA-Rg" target="_BLANK"><i class="fab fa-youtube"></i></a>
@@ -142,6 +145,21 @@
   <div class="donate">
     <a href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f6345180667dc&mfid=1713240376703_f6345180667dc#/checkout/openButton"><button class="blinking" >Donate</button></a>
   </div>
+
+<script>
+
+  //click on podcast clicks on listen live
+  // Get references to the elements 
+  const element1 = document.getElementById('podcast');
+  const element2 = document.getElementById('livestream');
+
+  // Add click event listener to Element 1
+  element1.addEventListener('click', function() {
+    // Trigger a click event on Element 2
+    element2.click();
+    console.log('click ' + element2)
+  })
+</script>
 
 </footer>
 </body>
