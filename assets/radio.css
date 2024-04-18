@@ -91,14 +91,13 @@
       #podcast, #podcast img {
         display: none;
       }
-
     }
 
     .headline {
       width: 85vw;
+      max-width: 85vw;
     }
     
-
     .scrollButton { /* down arrow */
       margin: 10% 0;
       position: relative;
