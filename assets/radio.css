@@ -84,7 +84,7 @@
       box-shadow: 1px 3px 12px 4px #fff;
     }
 
-    @media screen and (max-width: 600px) {
+    @media (max-width: 600px) {
       #livestream { 
         bottom: 120px; 
       }
