@@ -3,8 +3,7 @@
 
     body {
       font-family: "Barlow", sans-serif;
-    /*  animation: slider 42s infinite;  */
-      transition: background-image 2s ease;
+      transition: background-image 3s ease;
       background-size: cover;
       background-position: center;
       height: 100vh; /* Adjust height as needed */
@@ -15,15 +14,6 @@
       background-attachment: fixed; /* Keeps the background image fixed in place */
       text-align: center;
       cursor: url('../images/favicon.png'), auto; 
-    }
-
-    @keyframes slider {
-      0% { background-image: url('../images/slider_1.jpg'); }
-      20% { background-image: url('../images/slider_2.jpg'); }
-      40% { background-image: url('../images/slider_3.jpg'); }
-      60% { background-image: url('../images/slider_4.jpg'); }
-      80% { background-image: url('../images/slider_5.jpg'); }
-      100% { background-image: url('../images/slider_6.jpg'); }
     }
 
     #menuContainer {
@@ -83,7 +73,6 @@
       right: 0;
       text-align: center; 
       cursor: pointer;
-
     }
 
     #podcast img {
@@ -92,19 +81,17 @@
     }
 
     @media screen and (max-width: 600px) {
-      #livestream {       
-        bottom: unset;
-        top: 120px;
+      #livestream { 
+        bottom: 120px; 
         width: 70%! important;
       }
  
       #podcast {
-        bottom: unset;
-        top: 120px
+        display: none;
       }
 
       #podcast img {
-        width: 70%;
+        display: none;
       }
     }
 
@@ -135,44 +122,49 @@
     }
 
 
-    @keyframes spin {
+    @keyframes spinning {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
 
     .spin {
-      animation: spin 14s infinite linear;
+      animation: spinning 16s infinite linear;
+    }
+ 
+    #q96fm1, #q96fm2 {
+      width: 80vw;
     }
 
-    #event {
-        width: 50%;
-        max-width: 50%;
-    }
     .darken:hover {
       opacity: 0.8;
     }
 
+    #embedVideo {
+      width: 80vw;
+    }
 
-    .video-container {
+    .videoContainer {
         position: relative;
         padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
         height: 0;
         overflow: hidden;
+        margin: 0 auto; /* Center horizontally */
+        width: 80vw;
       }
-      .video-container iframe {
+
+      .videoContainer iframe {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100%; /* Adjust the width to fill the container */
         height: 100%;
       }
-
 
       @media screen and (max-width: 768px) {
         #logo {
             width: 90%
         }
-        .video-container iframe {
+        .videoContainer iframe {
             width: 95%;
             height: 95%;
           }
@@ -186,10 +178,10 @@
         text-align: center;
         font-size: 14px;
       }
-      .social-media {
+      .socialMedia {
         margin-top: 10px;
       }
-      .social-media a {
+      .socialMedia a {
         display: inline-block;
         margin: 0 10px;
         color: #fff;
@@ -197,7 +189,7 @@
         text-decoration: none;
       }
 
-      .social-media a:hover {
+      .socialMedia > a:hover {
         color:#e9be3c;
       }
 
