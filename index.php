@@ -95,7 +95,7 @@
       });
       </script>
      
-    </div>
+      </div>
 
     <?php
     }
@@ -104,7 +104,7 @@
  
   
     <div id="podcast">
-      <img src="images/podcast.jpg" />
+    <a href="https://streamer.radio.co/sc3a7cc4c5/listen" target="_BLANK"><img src="images/podcast.jpg" alt="Listen Live 24/7" /></a>
     </div>
   
   
