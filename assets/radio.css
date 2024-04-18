@@ -36,7 +36,7 @@
       text-decoration: none;
       margin: 0 3%;
       font-size: 22px;
-      font-family: Poppins, sans-serif;
+      font-family: "Barlow", sans-serif;
     }
 
     /* Style for the logo div */
@@ -66,6 +66,8 @@
       right: 0;
       text-align: center; /* Center the image horizontally */
       cursor: pointer;
+      max-width: 90vw;
+      display: inline-block;
     }
 
     #podcast {
@@ -84,14 +86,9 @@
     @media screen and (max-width: 600px) {
       #livestream { 
         bottom: 120px; 
-        width: 70%! important;
       }
  
       #podcast {
-        display: none;
-      }
-
-      #podcast img {
         display: none;
       }
     }
@@ -155,7 +152,7 @@
         padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
         height: 0;
         overflow: hidden;
-        margin: 0 auto; /* Center horizontally */
+        margin: 5vw auto; /* Center horizontally */
         width: 80vw;
       }
 
