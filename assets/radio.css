@@ -103,8 +103,8 @@
     }
 
     .headline img {
-      width: 100%;
-      max-width: 100%;
+      width: 90%;
+      max-width: 90%;
     }
     
     .scrollButton { /* down arrow */
@@ -173,8 +173,18 @@
         width: 100%; /* Adjust the width to fill the container */
         height: 100%;
       }
+      .mobile {
+        display: none;
+      }
 
       @media screen and (max-width: 768px) {
+        .desktop {
+          display: none;
+        }
+
+        .mobile {
+          display:unset;
+        }
         #logo {
             width: 90%
         }

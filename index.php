@@ -108,13 +108,16 @@
     <?php
     if(true) {
     ?>
-    <div class="headline"> 
-      <img id="events" src="images/events.png" />
+    <div class="headline" id="events"> 
+      <img  class="desktop" src="images/events_d.png" />
+      <img  class="mobile" src="images/events.png" />
 	  </div>
 
-    <img id="q96fm1" class="darken" src="images/event.jpg" alt="5gradio1" />
-    <img id="q96fm2" class="darken" src="images/q96fm.jpg" alt="5gradio1" />
+    <img id="q96fm1" class="darken desktop" class="darken" src="images/event_d.jpg" alt="5gradio1" />
+    <img id="q96fm1" class="darken mobile" class="darken" src="images/event_m.jpg" alt="5gradio1" />
 
+    <img id="q96fm2" class="darken desktop" src="images/q96fm_d.jpg" alt="5gradio1" />
+    <img id="q96fm2" class="darken mobile" src="images/q96fm_m.jpg" alt="5gradio1" />
     <?php
     } 
     ?>
@@ -132,8 +135,10 @@
      
      <button class="scrollButton" onclick="scrollDown()"><img src="images/arrow.png"></button>
 
-     <div class="headline">
-      <img id="videos" src="images/videos.png" />
+    <div class="headline" id="videos">
+      <img class="desktop" src="images/videos_d.png" />
+      <img class="mobile" src="images/videos_m.png" />
+ 
     </div>
 
     <div class="videoContainer">
@@ -151,8 +156,9 @@
     <button class="scrollButton" onclick="scrollDown()"><img src="images/arrow.png"></button>
 
     <!-- gallery pages -->
-    <div class="headline">
-      <img id="gallery" src="images/gallery.png" />
+    <div class="headline" id="gallery">
+      <img class="desktop" src="images/gallery_d.png" />
+      <img class="mobile" src="images/gallery_m.png" />
     </div>
    
 
