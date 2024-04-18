@@ -175,16 +175,21 @@
       }
       .mobile {
         display: none;
+        visibility: hidden;
+        opacity: 0;
       }
 
       @media screen and (max-width: 768px) {
         .desktop {
           display: none;
+          visibility: hidden;
+          opacity: 0;
         }
 
         .mobile {
           display:unset;
         }
+        
         #logo {
             width: 90%
         }
