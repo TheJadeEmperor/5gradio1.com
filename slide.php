@@ -105,11 +105,13 @@
   
     <button class="scrollButton" onclick="scrollDown()"><img src="images/arrow.png"></button>
   
-    
+    <?php
+    ?>
     <div class="headline"> 
       <img id="events" src="images/events.png" />
 	  </div>
-      
+    <?php
+    ?>
      
   
   </div>
