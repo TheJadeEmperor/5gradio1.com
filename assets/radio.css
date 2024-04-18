@@ -52,7 +52,7 @@ body {
 }
 
 .content {
-  padding: 60px 0px 100px 0px;
+  padding: 60px 0px 300px 0px;
   background-color: rgba(22, 34, 57, 0.25);
   color: rgb(255, 255, 255);
   font-size: 60px;
@@ -69,10 +69,9 @@ body {
   cursor: pointer;
   display: inline-block; 
 }
- 
-
-
+  
     #podcast {
+      z-index: 2;
       position: fixed; 
       bottom: 0;
       right: 0;
@@ -218,6 +217,10 @@ body {
       } 
 
       footer { 
+        z-index: 1;
+        position: absolute;  
+        bottom: 0;
+        width: 100%;
         padding-top: 10%;
         background-color: #0D021C;
         color: #fff;
