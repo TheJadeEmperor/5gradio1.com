@@ -72,8 +72,6 @@
     }
 
     #podcast {
-      display: none !important;
-        visibility: hidden;
       position: fixed; 
       bottom: 0;
       right: 0;
