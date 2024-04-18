@@ -3,7 +3,7 @@
 
     body { 
       font-family: "Barlow", sans-serif;
-      background-color: rgb(0, 0, 0);
+      background-color: #0D021C;
       color: #fff;
       transition: background-image 3s ease;
       background-repeat: no-repeat;
