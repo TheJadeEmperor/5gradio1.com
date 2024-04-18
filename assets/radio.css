@@ -88,9 +88,10 @@
         bottom: 120px; 
       }
  
-      #podcast {
+      #podcast, #podcast img {
         display: none;
       }
+
     }
 
     .headline {
