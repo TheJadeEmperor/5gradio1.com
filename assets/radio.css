@@ -95,11 +95,17 @@
       }
     }
 
+    .headline {
+      width: 90vw;
+    }
+    
+
     .scrollButton { /* down arrow */
+      margin: 10% 0;
       position: relative;
       bottom: 0;
-      background-color: rgba(22, 34, 57, 0);
       border: 0;
+      background-color: rgba(22, 34, 57, 0);
       cursor: pointer;
     }
 
