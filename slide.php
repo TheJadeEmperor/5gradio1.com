@@ -69,6 +69,28 @@
 
 
   <div class="content">
+
+
+  <div id="livestream">
+      <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
+      
+      <script type="text/javascript">
+      MRP.insert({
+      'url':'https://streamer.radio.co/sc3a7cc4c5/listen',
+      'codec':'mp3',
+      'volume':100,
+      'autoplay':false,
+      'jsevents':true,
+      'buffering':0,
+      'title':'5gradio1.com',
+      'wmode':'transparent',
+      'skin':'listen-live',
+      'width':250,
+      'height':100
+      });
+      </script>
+     
+    </div>
   What is Lorem Ipsum?
 
 
