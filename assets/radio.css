@@ -4,6 +4,7 @@
     body { 
       font-family: "Barlow", sans-serif;
       transition: background-image 3s ease;
+      background-repeat: no-repeat;
       background-position: center;
       width: 100vw;
       height: 100vh; /* Adjust height as needed */
