@@ -38,7 +38,7 @@
 </script>
   
 </head>
-<body  id="slider">
+<body id="slider">
 
  
   <div id="menuContainer">

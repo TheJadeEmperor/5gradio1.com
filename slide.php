@@ -42,6 +42,31 @@
   
 </head>
 <body id="slider">
+
+
+<div id="menuContainer">
+    <div class="menu blinking">
+      <a href="#home">Home</a>
+      <a href="#events">Events</a>
+      <a href="#videos">Videos</a>
+      <a href="#gallery">Gallery</a>
+
+    </div>
+    <div class="logo" id="home">
+      <img id="logo" class="darken" src="images/logo.png" alt="5gradio1"></div>
+    <div class="menu">
+      
+      <div class="socialMedia" >
+        <a class="spin darken" href="https://www.facebook.com/eastcoastgroupny/" target="_BLANK"><i class="fab fa-facebook"></i></a>
+        <a class="spin darken" href="https://twitter.com/q96fm?lang=en" target="_BLANK"><i class="fab fa-twitter"></i></a>
+        <a class="spin darken" href="https://www.youtube.com/channel/UCBiX00Ti_pfZl8ivRnPA-Rg" target="_BLANK"><i class="fab fa-youtube"></i></a>
+        <a class="spin darken" href="https://www.instagram.com/trevor.forde/" target="_BLANK"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+
 What is Lorem Ipsum?
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
