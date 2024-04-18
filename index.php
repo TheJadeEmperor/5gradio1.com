@@ -1,3 +1,8 @@
+<?php
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +27,8 @@
     'images/slider_4.jpg',
     'images/slider_5.jpg',
     'images/slider_6.jpg',
+    'images/office_d.jpg',
+    'images/postcard_d.jpg',
   ];
 
   // Function to change the background image
@@ -77,7 +84,7 @@
       'url':'https://streamer.radio.co/sc3a7cc4c5/listen',
       'codec':'mp3',
       'volume':100,
-      'autoplay':false,
+      'autoplay':true,
       'jsevents':true,
       'buffering':0,
       'title':'5gradio1.com',
@@ -169,16 +176,22 @@ if(true) {
 ?>
 
 <footer>
-  <p>5GRadio1 Copyright &copy;  <a class="darken" href="https://benjaminlouie.com" target="_BLANK">BL Web Solutions</a></p>
-  <div class="socialMedia" >
+
+  <p>
+      <a href="#"> <i class="fa-solid fa-map-marker"></i> 232-9 Merrick Blvd Laurelton, NY 11413 </a> &nbsp; 
+      <a href="tel:#8883725636"> <i class="fa-solid fa-phone"></i> (888) 372-5636 </a>
+  </p>
+
+  <p>5GRadio1 Copyright &copy; <a href="https://benjaminlouie.com" target="_BLANK">BL Web Solutions</a></p>
+  <div class="socialMedia">
     <a class="spin darken" href="https://www.facebook.com/eastcoastgroupny/" target="_BLANK"><i class="fab fa-facebook"></i></a>
     <a class="spin darken" href="https://twitter.com/q96fm?lang=en" target="_BLANK"><i class="fab fa-twitter"></i></a>
     <a class="spin darken" href="https://www.youtube.com/channel/UCBiX00Ti_pfZl8ivRnPA-Rg" target="_BLANK"><i class="fab fa-youtube"></i></a>
     <a class="spin darken" href="https://www.instagram.com/trevor.forde/" target="_BLANK"><i class="fab fa-instagram"></i></a>
   </div>
-
+ 
   <div class="donate">
-    <a href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f6345180667dc&mfid=1713240376703_f6345180667dc#/checkout/openButton"><button class="blinking" >Donate</button></a>
+    <a href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f4332416c39a6&mfid=1713469501036_f4332416c39a6#/checkout/openButton"><button class="blinking" >Donate</button></a>
   </div>
 
 </footer>
@@ -186,14 +199,5 @@ if(true) {
     }
 ?>
 
-<script>
-  const element2 = document.getElementById('livestream');
-
-    // Add click event listener to Element
-    element2.addEventListener('click', function() {
-
-      console.log('click ' + element2);
-    })
-  </script>
 </body>
 </html>

@@ -83,20 +83,26 @@
       box-shadow: 1px 3px 12px 4px #fff;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       #livestream { 
         position: unset;
         display: block;
-        margin: 20% 0 0 10%;
+        margin: 20% 0 0 30%;
       }
- 
-      #podcast, #podcast img {
+      #podcast {
         position: unset;
         display: block;
         margin: 20% auto;
       }
     }
 
+    @media (max-width: 540px) {
+      #livestream { 
+        margin: 20% 0 0 15%;
+      }
+    }
+
+ 
     .headline {
       width: 100%;
       max-width: 100%;
@@ -210,7 +216,6 @@
       } 
 
       footer { 
-        position: absolute; bottom: 0;
         padding-top: 10%;
         background-color: #0D021C;
         color: #fff;
