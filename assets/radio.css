@@ -51,11 +51,10 @@
     }
 
     .content {
-      position: relative;
       padding: 60px 20px 100px 20px;
       background-color: rgba(22, 34, 57, 0.25);
       color: rgb(255, 255, 255);
-      font-size: 60px
+      font-size: 60px;
     }
 
     
@@ -67,8 +66,7 @@
       right: 0;
       text-align: center; /* Center the image horizontally */
       cursor: pointer;
-      max-width: 90vw;
-      display: inline-block;
+      display: inline-block; 
     }
 
     #podcast {
@@ -86,15 +84,15 @@
 
     @media (max-width: 600px) {
       #livestream { 
-        bottom: 120px; 
+        position: unset;
+        display: block;
+        margin: 20% 0 0 10%;
       }
  
       #podcast, #podcast img {
-        display: none !important;
-        visibility: hidden;
-        line-height:0; overflow:hidden; padding:0; margin:0;
-        height: 0; width: 0;
-
+        position: unset;
+        display: block;
+        margin: 20% 0 0 10%;
       }
     }
 
@@ -191,6 +189,7 @@
         padding: 20px;
         text-align: center;
         font-size: 14px;
+        max-width: 100vw;
       }
       .socialMedia {
         margin-top: 10px;

@@ -65,7 +65,10 @@
 
   <div class="content">
 
-    <!-- BEGINS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
+     <?php 
+     if(true) {
+     ?>
+    
     <div id="livestream">
       <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
       
@@ -84,27 +87,36 @@
       'height':100
       });
       </script>
-      <!-- ENDS: AUTO-GENERATED MUSES RADIO PLAYER CODE -->
+     
     </div>
-    
+
+    <?
+    }
+    ?>
+ 
+ 
   <!-- 
     <div id="podcast">
       <img src="images/podcast.jpg" />
     </div>
   -->
+  
     <p>&nbsp;</p>
   
     <button class="scrollButton" onclick="scrollDown()"><img src="images/arrow.png"></button>
   
-    <!--
+    
     <div class="headline"> 
       <img id="events" src="images/events.png" />
 	  </div>
-       -->
+      
      
   
   </div>
 
+<?php
+if(true) {
+?>
 
 <footer>
   <p>5GRadio1 Copyright &copy;  <a class="darken" href="https://benjaminlouie.com" target="_BLANK">BL Web Solutions</a></p>
@@ -119,9 +131,11 @@
     <a href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f6345180667dc&mfid=1713240376703_f6345180667dc#/checkout/openButton"><button class="blinking" >Donate</button></a>
   </div>
 
-  
-
 </footer>
+<?
+    }
+?>
+
 <script>
   const element2 = document.getElementById('livestream');
 
@@ -129,7 +143,6 @@
     element2.addEventListener('click', function() {
 
       console.log('click ' + element2);
-      alert('click');
     })
   </script>
 </body>
