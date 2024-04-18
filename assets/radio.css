@@ -134,7 +134,6 @@
       text-decoration: underline;
     }
 
-
     @keyframes spinning {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
@@ -146,6 +145,7 @@
  
     #q96fm1, #q96fm2 {
       width: 80%;
+      max-width: 80%;
     }
 
     .darken:hover {
@@ -154,6 +154,7 @@
 
     #embedVideo {
       width: 80%;
+      max-width: 80%;
     }
 
     .videoContainer {
