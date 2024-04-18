@@ -94,8 +94,8 @@
     }
 
     .headline {
-      width: 85vw;
-      max-width: 85vw;
+      width: 85%;
+      max-width: 85%;
     }
     
     .scrollButton { /* down arrow */
