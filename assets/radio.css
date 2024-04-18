@@ -98,13 +98,13 @@
     }
 
     .headline {
-      width: 85%;
-      max-width: 85%;
+      width: 100%;
+      max-width: 100%;
     }
 
     .headline img {
-      width: 85%;
-      max-width: 85%;
+      width: 100%;
+      max-width: 100%;
     }
     
     .scrollButton { /* down arrow */
