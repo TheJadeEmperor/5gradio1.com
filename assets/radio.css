@@ -92,6 +92,7 @@
       #podcast, #podcast img {
         display: none !important;
         visibility: hidden;
+        line-height:0; overflow:hidden; padding:0; margin:0
       }
     }
 
