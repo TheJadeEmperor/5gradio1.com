@@ -66,7 +66,7 @@
   <div class="content">
 
      <?php 
-     if(false) {
+     if(true) {
      ?>
     
     <div id="livestream">

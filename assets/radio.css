@@ -3,7 +3,7 @@
 
     body { 
       font-family: "Barlow", sans-serif;
-      background-color: rgb(16, 16, 17);
+      background-color: rgb(16, 16, 17, 1);
       transition: background-image 3s ease;
       background-repeat: no-repeat;
       background-position: left; 
