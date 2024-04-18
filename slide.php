@@ -136,10 +136,25 @@
       <img id="videos" src="images/videos.png" />
     </div>
 
-     <div class="videoContainer">
+    <div class="videoContainer">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/DLr3nECDqJ0?si=s7c3DtBSyH3BZwjH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
+    <div class="videoContainer">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2BV1zJjmtA?si=Rlz9L1SgpnRZnUAJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  
+    <div class="videoContainer">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DLr3nECDqJ0?si=r_hvJF5PSGeiwJ15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <button class="scrollButton" onclick="scrollDown()"><img src="images/arrow.png"></button>
+
+    <!-- gallery pages -->
+    <div class="headline">
+      <img id="gallery" src="images/gallery.png" />
+    </div>
+   
 
   </div>
 
