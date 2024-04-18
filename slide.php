@@ -96,9 +96,9 @@
    
   
   
-    <div class="headline"> 
-      <img id="events" src="images/events.png" />
-	  </div>
+    <img id="q96fm1" class="darken" src="images/event.jpg" alt="5gradio1" />
+
+
     Why do we use it?
 
 
