@@ -66,7 +66,7 @@
   <div class="content">
 
      <?php 
-     if(true) {
+     if(false) {
      ?>
     
     <div id="livestream">
@@ -106,14 +106,41 @@
     <button class="scrollButton" onclick="scrollDown()"><img src="images/arrow.png"></button>
   
     <?php
+    if(true) {
     ?>
     <div class="headline"> 
       <img id="events" src="images/events.png" />
 	  </div>
+
+    <img id="q96fm1" class="darken" src="images/event.jpg" alt="5gradio1" />
+    <img id="q96fm2" class="darken" src="images/q96fm.jpg" alt="5gradio1" />
+
     <?php
+    } 
+    ?>
+
+    <?php
+      if(true) {
+    ?>
+
+      <video controls="" id="embedVideo">
+        <source src="assets/1.mp4" type="video/mp4">
+      </video>
+    <?php
+    } 
     ?>
      
-  
+     <button class="scrollButton" onclick="scrollDown()"><img src="images/arrow.png"></button>
+
+     
+     <img id="videos" class="headline" src="images/videos.png" />
+    
+
+     <div class="videoContainer">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DLr3nECDqJ0?si=s7c3DtBSyH3BZwjH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
   </div>
 
 <?php
