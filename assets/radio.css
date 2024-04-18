@@ -1,24 +1,22 @@
 /*Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&amp;display=swap');
 
-    body {
-     
+    body { 
       font-family: "Barlow", sans-serif;
       transition: background-image 3s ease;
-      background-size: cover;
       background-position: center;
       width: 100vw;
       height: 100vh; /* Adjust height as needed */
       margin: 0;
       padding: 0;
       position: absolute; 
-      background-size: cover;
       background-attachment: fixed; /* Keeps the background image fixed in place */
       text-align: center;
       cursor: url('../images/favicon.png'), auto; 
     }
 
     #menuContainer {
+      width: 100vw;
       display: flex; /* Use flexbox */
       background-color: rgba(22, 34, 57, 0);
       position: fixed;
