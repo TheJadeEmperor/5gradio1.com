@@ -95,11 +95,11 @@
     ?>
  
  
-  <!-- 
+  
     <div id="podcast">
       <img src="images/podcast.jpg" />
     </div>
-  -->
+  
   
     <p>&nbsp;</p>
   
