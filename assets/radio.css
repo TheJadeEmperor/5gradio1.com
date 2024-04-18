@@ -60,6 +60,7 @@
 
     
     #livestream {
+      z-index: 9;
       position: fixed; /* Position the container */
       bottom: 0; /* Align the container to the bottom of the viewport */
       left: 0; /* Center the container horizontally */
@@ -89,7 +90,8 @@
       }
  
       #podcast, #podcast img {
-        display: none;
+        display: none !important;
+        visibility: hidden;
       }
     }
 
