@@ -132,9 +132,9 @@
      
      <button class="scrollButton" onclick="scrollDown()"><img src="images/arrow.png"></button>
 
-     
-     <img id="videos" class="headline" src="images/videos.png" />
-    
+     <div class="headline">
+      <img id="videos" src="images/videos.png" />
+    </div>
 
      <div class="videoContainer">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/DLr3nECDqJ0?si=s7c3DtBSyH3BZwjH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
