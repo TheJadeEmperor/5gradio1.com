@@ -36,33 +36,7 @@
   setInterval(changeBackgroundImage, 5000);
 
 </script>
- 
-  <style>
-    /* Container styles */
-    .slider-container {
-      width: 100%; /* Take up full width of the viewport */ 
-      overflow: hidden; /* Hide overflowing content */
-      position: relative; /* Establish positioning context */
-    }
-
-    /* Slider styles */
-    .slider {
-      display: flex;
-      transition: transform 0.5s ease; /* Smooth transition for sliding effect */
-    }
-
-    /* Slide styles */
-    .slide {
-      flex: 0 0 100%; /* Each slide takes up full width */
-    }
-
-    /* Image styles */
-    .slide img {
-      width: 100%; /* Make sure images fill their container */
-      height: 100%; /* Make sure images fill their container */
-      object-fit: cover; /* Cover the entire container with the image */
-    }
-  </style>
+  
 </head>
 <body  id="slider">
 
@@ -114,12 +88,14 @@
     </div>
     
   
+    <div id="podcast">
+      <img src="images/podcast.jpg" />
+    </div>
+  
     <p>&nbsp;</p>
   
-
+    <button class="scrollButton" onclick="scrollDown()"><img src="images/arrow.png"></button>
   
-    <!--<h1 id="events">Events</h1>-->
-    
      
        
      
