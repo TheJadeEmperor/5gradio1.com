@@ -173,12 +173,11 @@
         width: 100%; /* Adjust the width to fill the container */
         height: 100%;
       }
+ 
       .mobile {
         display: none;
         visibility: hidden;
-        opacity: 0;
-        position: absolute;
-        left: -9999px;
+        height: 0; width: 0;
       }
 
       @media screen and (max-width: 768px) {
@@ -187,10 +186,13 @@
           visibility: hidden;
           opacity: 0;
           position: absolute;
-        left: -9999px;
+          left: -9999px;
+          height: 0; width: 0;
         }
 
         .mobile {
+          visibility: unset;
+          height: unset; width: unset;
           display:unset;
         }
 

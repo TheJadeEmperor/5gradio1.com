@@ -110,7 +110,7 @@
     ?>
     <div class="headline" id="events"> 
       <img  class="desktop" src="images/events_d.png" />
-      <img  class="mobile" src="images/events.png" />
+      <img  class="mobile" src="images/events_m.png" />
 	  </div>
 
     <img id="q96fm1" class="darken desktop" class="darken" src="images/event_d.jpg" alt="5gradio1" />
