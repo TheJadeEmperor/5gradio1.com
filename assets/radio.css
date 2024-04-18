@@ -177,6 +177,8 @@
         display: none;
         visibility: hidden;
         opacity: 0;
+        position: absolute;
+        left: -9999px;
       }
 
       @media screen and (max-width: 768px) {
@@ -184,12 +186,14 @@
           display: none;
           visibility: hidden;
           opacity: 0;
+          position: absolute;
+        left: -9999px;
         }
 
         .mobile {
           display:unset;
         }
-        
+
         #logo {
             width: 90%
         }
