@@ -53,17 +53,15 @@ body {
 
 .content {
   padding: 60px 0px 300px 0px;
-  background-color: rgba(22, 34, 57, 0.25);
+  background-color: rgba(22, 34, 57, 0.4);
   color: rgb(255, 255, 255);
   font-size: 60px;
 }
 
-    
 #livestream {
-  z-index: 8;
+  z-index: 4;
   position: fixed; /* Position the container */
   bottom: 26px; /* Align the container to the bottom of the viewport */
-  left: 0; /* Center the container horizontally */
   right: 0;
   text-align: left; /* Center the image horizontally */
   cursor: pointer;
@@ -71,10 +69,10 @@ body {
 }
   
 #podcast {
-  z-index: 9;
+  z-index: 3;
   position: fixed; 
   bottom: 0;
-  right: 0;
+  left: 0;
   text-align: center; 
   cursor: pointer;
 }

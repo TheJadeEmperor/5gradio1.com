@@ -28,6 +28,11 @@
      <?php 
      if(true) {
      ?>
+
+    <div id="podcast">
+      <a href="https://streamer.radio.co/sc3a7cc4c5/listen" target="_BLANK"><img src="images/podcast.jpg" alt="Listen Live 24/7" /></a>
+    </div>
+  
     
     <div id="livestream">
       <script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
@@ -54,19 +59,15 @@
     }
     ?>
  
-    <div id="podcast">
-      <a href="https://streamer.radio.co/sc3a7cc4c5/listen" target="_BLANK"><img src="images/podcast.jpg" alt="Listen Live 24/7" /></a>
-    </div>
-  
   
     <p>&nbsp;</p>
   
-    <button class="scrollButton" onclick="scrollDown()"><img src="images/arrow.png"></button>
+    <button class="scrollButton darken" onclick="scrollDown()"><img src="images/arrow.png"></button>
   
     <?php
     if(true) {
     ?>
-    <div class="headline" id="events"> 
+    <div class="headline darken" id="events"> 
       <img  class="desktop" src="images/events_d.png" />
       <img  class="mobile" src="images/events_m.png" />
 	  </div>
@@ -91,9 +92,9 @@
     } 
     ?>
      
-     <button class="scrollButton" onclick="scrollDown()"><img src="images/arrow.png"></button>
+     <button class="scrollButton darken" onclick="scrollDown()"><img src="images/arrow.png"></button>
 
-    <div class="headline" id="videos">
+    <div class="headline darken" id="videos">
       <img class="desktop" src="images/videos_d.png" />
       <img class="mobile" src="images/videos_m.png" />
  
@@ -111,78 +112,76 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/DLr3nECDqJ0?si=r_hvJF5PSGeiwJ15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
-    <button class="scrollButton" onclick="scrollDown()"><img src="images/arrow.png"></button>
+    <button class="scrollButton darken" onclick="scrollDown()"><img src="images/arrow.png"></button>
 
     <!-- gallery pages -->
-    <div class="headline" id="gallery">
+    <div class="headline darken" id="gallery">
       <img class="desktop" src="images/gallery_d.png" />
       <img class="mobile" src="images/gallery_m.png" />
     </div>
    
     <!-- carousel --> 
-    
-
     <div class="container">
-  <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-      <li data-target="#myCarousel" data-slide-to="6"></li>
-      <li data-target="#myCarousel" data-slide-to="7"></li>
-    </ol>
+    <br>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
+        </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <?php
-        $carousel = array(
-          'gallery_miami' => 'Miami',
-          'gallery_zulu' => 'Zulu',
-          'gallery_nyc' => 'NYC',
-          'gallery_eastcoastfam' => 'East Coast Fam',
-          'gallery_atlanta' => 'Atlanta',
-          'gallery_blm' => 'BLM',
-          'gallery_health' => 'Health & Beauty',
-          'gallery_global' => 'Global',
-        );
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <?php
+            $carousel = array(
+              'gallery_miami' => 'Miami',
+              'gallery_zulu' => 'Zulu',
+              'gallery_nyc' => 'NYC',
+              'gallery_eastcoastfam' => 'East Coast Fam',
+              'gallery_atlanta' => 'Atlanta',
+              'gallery_blm' => 'BLM',
+              'gallery_health' => 'Health & Beauty',
+              'gallery_global' => 'Global',
+            );
 
-        foreach ($carousel as $slide => $caption) {
-          //exceptions
-          if($slide == 'gallery_miami') $active = 'active'; else $active = '';
+            foreach ($carousel as $slide => $caption) {
+              //exceptions
+              if($slide == 'gallery_miami') $active = 'active'; else $active = '';
 
-          if($slide == 'gallery_global') $ext = 'gif'; else $ext = 'jpg';
+              if($slide == 'gallery_global') $ext = 'gif'; else $ext = 'jpg';
 
-          echo '<div class="item '.$active.'">
-          <!--<a href="./?page='.$slide.'">--><img src="images/gallery/'.$slide.'.'.$ext.'" alt="'.$caption.'" width="460" height="345">
-          <!--</a>-->
-          <div class="carousel-caption">
-            <h3>'.$caption.'</h3>
-          </div>
-        </div>';
-        }
-      ?>
-  
-    </div> <!-- Wrapper for slides -->
+              echo '<div class="item '.$active.'">
+              <!--<a href="./?page='.$slide.'">--><img src="images/gallery/'.$slide.'.'.$ext.'" alt="'.$caption.'" width="460" height="345">
+              <!--</a>-->
+              <div class="carousel-caption">
+                <h3>'.$caption.'</h3>
+              </div>
+            </div>';
+            }
+          ?>
+      
+        </div> <!-- Wrapper for slides -->
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
  <!-- carousel --> 
 
-  </div><!-- content -->
+</div><!-- content -->
 
 <?php
 if(true) {
