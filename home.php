@@ -119,11 +119,70 @@
       <img class="mobile" src="images/gallery_m.png" />
     </div>
    
-    <!-- slider --> 
+    <!-- carousel --> 
     
-    <!-- slider --> 
 
+    <div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <?php
+        $carousel = array(
+          'gallery_miami' => 'Miami',
+          'gallery_zulu' => 'Zulu',
+          'gallery_nyc' => 'NYC',
+          'gallery_eastcoastfam' => 'East Coast Fam',
+          'gallery_atlanta' => 'Atlanta',
+          'gallery_blm' => 'BLM',
+          'gallery_health' => 'Health & Beauty',
+          'gallery_global' => 'Global',
+        );
+
+        foreach ($carousel as $slide => $caption) {
+          //exceptions
+          if($slide == 'gallery_miami') $active = 'active'; else $active = '';
+
+          if($slide == 'gallery_global') $ext = 'gif'; else $ext = 'jpg';
+
+          echo '<div class="item '.$active.'">
+          <!--<a href="./?page='.$slide.'">--><img src="images/gallery/'.$slide.'.'.$ext.'" alt="'.$caption.'" width="460" height="345">
+          <!--</a>-->
+          <div class="carousel-caption">
+            <h3>'.$caption.'</h3>
+          </div>
+        </div>';
+        }
+      ?>
+  
+    </div> <!-- Wrapper for slides -->
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
+</div>
+ <!-- carousel --> 
+
+  </div><!-- content -->
 
 <?php
 if(true) {

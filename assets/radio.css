@@ -27,18 +27,18 @@ body {
 /* Style for the menu divs */
 .menu {
   background-color: rgba(22, 34, 57, 0); 
-  color: #fff;
   padding: 10px 20px;
   text-align: center;
   flex: 1 1 36%;
 }
 
-.menu a {
-  text-decoration: none;
-  margin: 0 3%;
-  font-size: 22px;
-  font-family: "Barlow", sans-serif;
-}
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 3%;
+    font-size: 22px;
+    font-family: "Barlow", sans-serif;
+  }
 
 /* Style for the logo div */
 .logo { 
@@ -60,7 +60,7 @@ body {
 
     
 #livestream {
-  z-index: 9;
+  z-index: 8;
   position: fixed; /* Position the container */
   bottom: 26px; /* Align the container to the bottom of the viewport */
   left: 0; /* Center the container horizontally */
@@ -70,197 +70,203 @@ body {
   display: inline-block; 
 }
   
+#podcast {
+  z-index: 9;
+  position: fixed; 
+  bottom: 0;
+  right: 0;
+  text-align: center; 
+  cursor: pointer;
+}
+
+  #podcast img {
+    border-radius: 50px;
+    box-shadow: 1px 3px 12px 4px #fff;
+  }
+
+  @media (max-width: 768px) {
+    #livestream { 
+      position: unset;
+      display: block;
+      margin: 20% 0 0 30%;
+    }
     #podcast {
-      z-index: 2;
-      position: fixed; 
-      bottom: 0;
-      right: 0;
-      text-align: center; 
-      cursor: pointer;
+      position: unset;
+      display: block;
+      margin: 20% auto;
     }
+  }
 
-    #podcast img {
-      border-radius: 50px;
-      box-shadow: 1px 3px 12px 4px #fff;
+  @media (max-width: 540px) {
+    #livestream { 
+      margin: 20% 0 0 15%;
     }
+  }
 
-    @media (max-width: 768px) {
-      #livestream { 
-        position: unset;
-        display: block;
-        margin: 20% 0 0 30%;
-      }
-      #podcast {
-        position: unset;
-        display: block;
-        margin: 20% auto;
-      }
-    }
 
-    @media (max-width: 540px) {
-      #livestream { 
-        margin: 20% 0 0 15%;
-      }
-    }
+.headline {
+  width: 100%;
+  max-width: 100%;
+}
 
+  .headline img {
+    width: 90%;
+    max-width: 90%;
+  }
+  
+.scrollButton { /* down arrow */
+  margin: 10% 0;
+  position: relative;
+  bottom: 0;
+  border: 0;
+  background-color: rgba(22, 34, 57, 0);
+  cursor: pointer;
+}
+
+  .scrollButton img {
+    color:rgb(228, 225, 225);
+    width: 25%;
+  }
+    
+h1 {
+  color:rgb(207, 207, 172);
+}
+
+a {
+    color: #ecebeb;
+}
+
+  a:hover {
+    color:#e9be3c !important;
+    text-decoration: underline;
+  }
+
+@keyframes spinning {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin {
+  animation: spinning 16s infinite linear;
+}
+
+#q96fm1, #q96fm2 {
+  width: 80%;
+  max-width: 80%;
+}
+
+.darken:hover {
+  opacity: 0.8;
+}
+
+#embedVideo {
+  width: 80%;
+  max-width: 80%;
+}
+
+.videoContainer {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: 5% auto; /* Center horizontally */
+    width: 80%;
+  }
+
+  .videoContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Adjust the width to fill the container */
+    height: 100%;
+  }
  
-    .headline {
-      width: 100%;
-      max-width: 100%;
+.mobile {
+  display: none;
+  visibility: hidden;
+  height: 0; width: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-size: contain;
+    background-position: center; 
+  }
+  .desktop {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+    height: 0; width: 0;
+  }
+
+  .mobile {
+    visibility: unset;
+    height: unset; width: unset;
+    display:unset;
+  }
+
+  #logo {
+      width: 90%
+  }
+  .videoContainer iframe {
+      width: 95%;
+      height: 95%;
+    }
+} 
+
+footer { 
+  z-index: 1;
+  position: absolute;  
+  bottom: 0;
+  width: 100%;
+  padding-top: 10%;
+  background-color: #0D021C;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+  .socialMedia {
+    margin-top: 10px;
+  }
+    .socialMedia a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
     }
 
-    .headline img {
-      width: 90%;
-      max-width: 90%;
-    }
-    
-    .scrollButton { /* down arrow */
-      margin: 10% 0;
-      position: relative;
-      bottom: 0;
-      border: 0;
-      background-color: rgba(22, 34, 57, 0);
-      cursor: pointer;
-    }
-
-    .scrollButton img {
-      color:rgb(228, 225, 225);
-      width: 25%;
-    }
-    
-    h1 {
-      color:rgb(207, 207, 172);
-    }
-
-    a {
-        color: #ecebeb;
-    }
-
-    a:hover {
+    .socialMedia > a:hover {
       color:#e9be3c;
-      text-decoration: underline;
     }
 
-    @keyframes spinning {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
+  .donate {
+    position: relative;
+    float: right;
+    bottom: 50px;
+  }
+
+    .donate button {
+      background-color: #F2B90C;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 10px;
     }
 
-    .spin {
-      animation: spinning 16s infinite linear;
-    }
- 
-    #q96fm1, #q96fm2 {
-      width: 80%;
-      max-width: 80%;
-    }
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.blinking {
+  animation: blink 4s infinite;
+}
 
-    .darken:hover {
-      opacity: 0.8;
-    }
-
-    #embedVideo {
-      width: 80%;
-      max-width: 80%;
-    }
-
-    .videoContainer {
-        position: relative;
-        padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
-        height: 0;
-        overflow: hidden;
-        margin: 5% auto; /* Center horizontally */
-        width: 80%;
-      }
-
-      .videoContainer iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%; /* Adjust the width to fill the container */
-        height: 100%;
-      }
- 
-      .mobile {
-        display: none;
-        visibility: hidden;
-        height: 0; width: 0;
-      }
-
-      @media screen and (max-width: 768px) {
-        body {
-          background-size: contain;
-          background-position: center; 
-        }
-        .desktop {
-          display: none;
-          visibility: hidden;
-          opacity: 0;
-          position: absolute;
-          left: -9999px;
-          height: 0; width: 0;
-        }
-
-        .mobile {
-          visibility: unset;
-          height: unset; width: unset;
-          display:unset;
-        }
-
-        #logo {
-            width: 90%
-        }
-        .videoContainer iframe {
-            width: 95%;
-            height: 95%;
-          }
-      } 
-
-      footer { 
-        z-index: 1;
-        position: absolute;  
-        bottom: 0;
-        width: 100%;
-        padding-top: 10%;
-        background-color: #0D021C;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-        font-size: 14px;
-      }
-      .socialMedia {
-        margin-top: 10px;
-      }
-      .socialMedia a {
-        display: inline-block;
-        margin: 0 10px;
-        color: #fff;
-        font-size: 20px;
-        text-decoration: none;
-      }
-
-      .socialMedia > a:hover {
-        color:#e9be3c;
-      }
-
-      .donate {
-        position: relative;
-        float: right;
-        bottom: 50px;
-      }
-
-      .donate button {
-        background-color: #F2B90C;
-        font-weight: bold;
-        border-radius: 8px;
-        padding: 10px;
-      }
-
-      @keyframes blink {
-        0% { opacity: 1; }
-        50% { opacity: 0; }
-        100% { opacity: 1; }
-      }
-      .blinking {
-        animation: blink 4s infinite;
-      }
+.carousel-caption h3 {
+  font-size: 34px ;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
