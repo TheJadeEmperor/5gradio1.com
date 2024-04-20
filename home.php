@@ -103,11 +103,11 @@
     <div class="videoContainer">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/DLr3nECDqJ0?si=s7c3DtBSyH3BZwjH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-
+<!--
     <div class="videoContainer">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2BV1zJjmtA" title="MUSIC BUFF RADIO LIVE ON Q96TV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-  
+      -->
      
     <div class="videoContainer">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/tPtpHZZHmr4" title="Trevor Forde LIVE on Q96TV with  Renaizancerz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -158,8 +158,8 @@
               if($slide == 'gallery_global') $ext = 'gif'; else $ext = 'jpg';
 
               echo '<div class="item '.$active.'">
-              <!--<a href="./?page='.$slide.'">--><img src="images/gallery/'.$slide.'.'.$ext.'" alt="'.$caption.'" width="460" height="345">
-              <!--</a>-->
+              <a href="./?page='.$slide.'"><img src="images/gallery/'.$slide.'.'.$ext.'" alt="'.$caption.'" width="460" height="345">
+              </a>
               <div class="carousel-caption">
                 <h3>'.$caption.'</h3>
               </div>
