@@ -164,19 +164,15 @@ a {
 
 .videoContainer {
     position: relative;
-    padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+    padding-bottom: 30.25%; /* Aspect ratio: 16:9 */
     height: 0;
     overflow: hidden;
     margin: 5% auto; /* Center horizontally */
-    width: 80%;
+     
   }
 
   .videoContainer iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Adjust the width to fill the container */
-    height: 100%;
+    margin: 0 auto;
   }
  
 .mobile {
