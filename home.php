@@ -1,34 +1,3 @@
-<body id="slider">
-
- 
-  <div id="menuContainer">
-    <div class="menu blinking">
-      <a href="#home">Home</a>
-      <a href="#events">Events</a>
-      <a href="#videos">Videos</a>
-      <a href="#gallery">Gallery</a>
-
-    </div>
-   
-    <div class="menu">
-      
-      <div class="socialMedia" >
-        <a class="spin darken" href="https://www.facebook.com/eastcoastgroupny/" target="_BLANK"><i class="fab fa-facebook"></i></a>
-        <a class="spin darken" href="https://twitter.com/q96fm?lang=en" target="_BLANK"><i class="fab fa-twitter"></i></a>
-        <a class="spin darken" href="https://www.youtube.com/channel/UCBiX00Ti_pfZl8ivRnPA-Rg" target="_BLANK"><i class="fab fa-youtube"></i></a>
-        <a class="spin darken" href="https://www.instagram.com/trevor.forde/" target="_BLANK"><i class="fab fa-instagram"></i></a>
-      
-        <div class="donate">
-          <a href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f4332416c39a6&mfid=1713469501036_f4332416c39a6#/checkout/openButton"><button class="blinking" >Donate</button></a>
-        </div>
-      
-      </div>
-    </div>
-    <div class="logo" id="home">
-      <img id="logo" class="darken" src="images/logo.png" alt="5gradio1">
-    </div>
-
-</div>
 
 
   <div class="content">
