@@ -22,6 +22,7 @@ body {
   display: flex; /* Use flexbox */
   background-color: rgba(22, 34, 57, 0);
   position: fixed;
+  width: 100%;
 }
 
 /* Style for the menu divs */
@@ -29,7 +30,7 @@ body {
   background-color: rgba(22, 34, 57, 0); 
   padding: 10px 20px;
   text-align: center;
-  flex: 1 1 36%;
+  flex: 1 1 33%;
 }
 
   .menu a {
@@ -44,11 +45,11 @@ body {
 .logo { 
   padding: 10px;
   text-align: center; 
-  flex: 1 1 20%;
+  flex: 1 1 33%;
 }
 
 #logo {
-  width: 60%; 
+  width: 70%; 
 }
 
 .content {
@@ -91,7 +92,7 @@ body {
     #podcast {
       position: unset;
       display: block;
-      margin: 20% auto;
+      margin: 44% auto 22% auto;
     }
   }
 
@@ -149,8 +150,9 @@ a {
 }
 
 #q96fm1, #q96fm2 {
-  width: 80%;
-  max-width: 80%;
+  width: 50%;
+  max-width: 50%;
+  margin-bottom: 5%;
 }
 
 .darken:hover {
@@ -240,14 +242,14 @@ footer {
   .donate {
     position: relative;
     float: right;
-    bottom: 50px;
+   
   }
 
     .donate button {
       background-color: #F2B90C;
       font-weight: bold;
-      border-radius: 8px;
-      padding: 10px;
+      border-radius: 12px;
+      padding: 8px 10px;
     }
 
 @keyframes blink {

@@ -228,8 +228,6 @@ switch ($page) {
 ?> 
 </div>
 
- 
-
 
 <footer>
 
