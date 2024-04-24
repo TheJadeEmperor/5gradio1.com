@@ -149,10 +149,6 @@ a {
   animation: spinning 16s infinite linear;
 }
 
-#q96fm1, #q96fm2 {
-  height: 100vh;
-  margin-bottom: 5%;
-}
 
 .darken:hover {
   opacity: 0.8;
@@ -166,10 +162,8 @@ a {
 .videoContainer {
     position: relative;
     padding-bottom: 30.25%; /* Aspect ratio: 16:9 */
-    height: 0;
     overflow: hidden;
-    margin: 5% auto; /* Center horizontally */
-     
+    margin: 5% auto; /* Center horizontally */    
   }
 
   .videoContainer iframe {
@@ -182,11 +176,21 @@ a {
   height: 0; width: 0;
 }
 
+#q96fm {
+  max-width: 100%;
+}
+
+#q96fm1, #q96fm2 {
+  margin-bottom: 5%;
+  max-width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   body {
     background-size: contain;
     background-position: center; 
   }
+
   .desktop {
     display: none;
     visibility: hidden;
@@ -205,11 +209,11 @@ a {
   #logo {
       width: 90%
   }
+  
   .videoContainer iframe {
       width: 95%;
-      height: 95%;
-    }
-} 
+  }
+}
 
 footer { 
   z-index: 1;

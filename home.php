@@ -49,17 +49,17 @@
       <img  class="mobile" src="images/events_m.png" />
 	  </div>
 
-    <img id="q96fm1" class="darken desktop" class="darken" src="images/event_d.jpg" alt="5gradio1" />
-    <img id="q96fm1" class="darken mobile" class="darken" src="images/event_m.jpg" alt="5gradio1" />
+    <div id="q96fm">
+      <img id="q96fm1" class="darken desktop" class="darken" src="images/event_d.jpg" alt="5gradio1" />
+      <img id="q96fm1" class="darken mobile" class="darken" src="images/event_m.jpg" alt="5gradio1" />
 
-    <img id="q96fm2" class="darken desktop" src="images/q96fm_d.jpg" alt="5gradio1" />
-    <img id="q96fm2" class="darken mobile" src="images/q96fm_m.jpg" alt="5gradio1" />
+      <img id="q96fm2" class="darken desktop" src="images/q96fm_d.jpg" alt="5gradio1" />
+      <img id="q96fm2" class="darken mobile" src="images/q96fm_m.jpg" alt="5gradio1" />
+    </div>
     <?php
     } 
-    ?>
 
-    <?php
-      if(true) {
+    if(true) {
     ?>
 
       <video controls="" id="embedVideo">
@@ -74,7 +74,6 @@
     <div class="headline darken" id="videos">
       <img class="desktop" src="images/videos_d.png" />
       <img class="mobile" src="images/videos_m.png" />
- 
     </div>
 
     <div class="videoContainer">
@@ -87,7 +86,7 @@
       -->
      
     <div class="videoContainer">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/tPtpHZZHmr4" title="Trevor Forde LIVE on Q96TV with  Renaizancerz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tPtpHZZHmr4" title="Trevor Forde LIVE on Q96TV with  Renaizancerz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <button class="scrollButton darken" onclick="scrollDown()"><img src="images/arrow.png"></button>
