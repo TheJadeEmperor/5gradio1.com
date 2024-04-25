@@ -50,11 +50,8 @@
 	  </div>
 
     <div id="q96fm">
-      <img id="q96fm1" class="darken desktop" class="darken" src="images/event_d.jpg" alt="5gradio1" />
-      <img id="q96fm1" class="darken mobile" class="darken" src="images/event_m.jpg" alt="5gradio1" />
-
-      <img id="q96fm2" class="darken desktop" src="images/q96fm_d.jpg" alt="5gradio1" />
-      <img id="q96fm2" class="darken mobile" src="images/q96fm_m.jpg" alt="5gradio1" />
+      <img id="q96fm1" class="darken" class="darken" src="images/event_m.jpg" alt="5gradio1" />
+      <img id="q96fm2" class="darken" src="images/q96fm_m.jpg" alt="5gradio1" />
     </div>
     <?php
     } 

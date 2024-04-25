@@ -149,7 +149,6 @@ a {
   animation: spinning 16s infinite linear;
 }
 
-
 .darken:hover {
   opacity: 0.8;
 }
@@ -180,10 +179,10 @@ a {
   max-width: 100%;
 }
 
-#q96fm1, #q96fm2 {
-  margin-bottom: 5%;
-  max-width: 100%;
-}
+  #q96fm1, #q96fm2 {
+    margin-bottom: 5%;
+    max-width: 100%;
+  }
 
 @media screen and (max-width: 768px) {
   body {
