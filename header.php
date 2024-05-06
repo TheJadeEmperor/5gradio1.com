@@ -30,7 +30,7 @@
   <script>
 
     function scrollDown() {
-      window.scrollBy(0, 400); // Scroll down by 200 pixels
+      window.scrollBy(0, 400); // Scroll down by Y pixels
     }
  
   // Array of image URLs
@@ -53,16 +53,14 @@
     slider.style.backgroundImage = `url(${imageUrl})`; // Set the background image
   }
 
-  // Change background image every 5 seconds (5000 milliseconds)
-  setInterval(changeBackgroundImage, 5000);
+  // Change background image every 3000 milliseconds
+  setInterval(changeBackgroundImage, 3000);
 
 </script>
   
 </head>
 <body id="slider">
 
-
-  
   <div id="menuContainer">
     <div class="menu blinking">
       <a href="#home">Home</a>
