@@ -41,6 +41,9 @@
     'images/slider_4.jpg',
     'images/slider_5.jpg',
     'images/slider_6.jpg',
+    'images/slider_7.jpg',
+    'images/slider_8.jpg',
+    'images/slider_9.jpg',
     'images/office_d.jpg',
     'images/postcard_d.jpg',
   ];
