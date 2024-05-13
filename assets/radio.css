@@ -109,8 +109,8 @@ body {
 }
 
   .headline img {
-    width: 90%;
-    max-width: 90%;
+     
+    max-width: 600px;
   }
   
 .scrollButton { /* down arrow */
@@ -184,6 +184,7 @@ a {
     max-width: 100%;
   }
 
+
 @media screen and (max-width: 768px) {
   body {
     background-size: contain;
@@ -211,6 +212,11 @@ a {
   
   .videoContainer iframe {
       width: 95%;
+  }
+
+  
+  .content img {
+    max-width: 320px;
   }
 }
 

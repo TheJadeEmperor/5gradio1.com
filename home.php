@@ -53,6 +53,16 @@
       <img id="q96fm1" class="darken" class="darken" src="images/event_m.jpg" alt="5gradio1" />
       <img id="q96fm2" class="darken" src="images/q96fm_m.jpg" alt="5gradio1" />
     </div>
+
+    <div id="carnival">
+      <img id="" class="darken" class="darken" src="images/events/carnival.png" alt="5gradio1" />
+
+      <video controls="" id="">
+        <source src="images/events/carnival.3gp" type="video/mp4">
+      </video>
+       
+    </div>
+
     <?php
     } 
 
@@ -72,6 +82,7 @@
       <img class="desktop" src="images/videos_d.png" />
       <img class="mobile" src="images/videos_m.png" />
     </div>
+
 
     <div class="videoContainer">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/DLr3nECDqJ0?si=s7c3DtBSyH3BZwjH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
