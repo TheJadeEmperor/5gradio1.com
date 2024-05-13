@@ -45,17 +45,19 @@
     if(true) {
     ?>
     <div class="headline darken" id="events"> 
-      <img  class="desktop" src="images/events_d.png" />
-      <img  class="mobile" src="images/events_m.png" />
+      <img class="desktop" src="images/events_d.png" />
+      <img class="mobile" src="images/events_m.png" />
 	  </div>
 
     <div id="q96fm">
-      <img id="q96fm1" class="darken" class="darken" src="images/event_m.jpg" alt="5gradio1" />
+      <img class="darken" src="images/events/east_coast.jpg" />
+
       <img id="q96fm2" class="darken" src="images/q96fm_m.jpg" alt="5gradio1" />
     </div>
 
-    <div id="carnival">
+    <div>
       <img id="" class="darken" class="darken" src="images/events/carnival_1.jpg" alt="5gradio1" />
+     
       <img id="" class="darken" class="darken" src="images/events/carnival_2.jpg" alt="5gradio1" />
       <img id="" class="darken" class="darken" src="images/events/carnival_3.jpg" alt="5gradio1" />
        
