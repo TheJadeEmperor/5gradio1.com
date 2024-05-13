@@ -184,6 +184,9 @@ a {
     max-width: 100%;
   }
 
+.content img {
+  max-width: 800px;
+}
 
 @media screen and (max-width: 768px) {
   body {
@@ -214,7 +217,6 @@ a {
       width: 95%;
   }
 
-  
   .content img {
     max-width: 320px;
   }

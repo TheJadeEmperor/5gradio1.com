@@ -55,11 +55,9 @@
     </div>
 
     <div id="carnival">
-      <img id="" class="darken" class="darken" src="images/events/carnival.png" alt="5gradio1" />
-
-      <video controls="" id="">
-        <source src="images/events/carnival.3gp" type="video/mp4">
-      </video>
+      <img id="" class="darken" class="darken" src="images/events/carnival_1.jpg" alt="5gradio1" />
+      <img id="" class="darken" class="darken" src="images/events/carnival_2.jpg" alt="5gradio1" />
+      <img id="" class="darken" class="darken" src="images/events/carnival_3.jpg" alt="5gradio1" />
        
     </div>
 
