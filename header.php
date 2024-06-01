@@ -87,8 +87,10 @@
       
       </div>
     </div>
-    <div class="logo" id="home">
-      <img id="logo" class="darken" src="images/logo.png" alt="5gradio1">
-    </div>
+    
 
+  </div>
+
+  <div class="logo" id="home">
+      <img id="logo" class="darken" src="images/logo.png" alt="5gradio1">
   </div>
